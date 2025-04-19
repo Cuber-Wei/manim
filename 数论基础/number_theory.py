@@ -479,12 +479,12 @@ class Euclid(S):
             "Euclid.py",
             language="Python",
             tab_width=4,
-            line_spacing=1,
-            insert_line_no=False,
+            add_line_numbers=False,
+            formatter_style="github-dark",
             background="window",
-            style="github-dark",
-            font="Monospace",
-            font_size=24
+            background_config={
+                "stroke_color": "maroon"
+            },
         ).shift(RIGHT*0.5+UP*0.2)
         obj.play(FadeIn(euclid))
         change_bottom_words(obj, "欧几里得算法的Python实现")
@@ -553,12 +553,12 @@ class ExtEuclid(S):
             "ExtEuclid.py",
             language="Python",
             tab_width=4,
-            line_spacing=1,
-            insert_line_no=False,
+            add_line_numbers=False,
+            formatter_style="github-dark",
             background="window",
-            style="github-dark",
-            font="Monospace",
-            font_size=18
+            background_config={
+                "stroke_color": "maroon"
+            },
         ).shift(RIGHT*0.5+UP*0.2)
         obj.play(FadeIn(exteuclid))
         change_bottom_words(obj, "扩展欧几里得算法的Python实现")
